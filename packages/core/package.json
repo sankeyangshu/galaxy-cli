@@ -5,7 +5,6 @@
   "author": "sankeyangshu",
   "homepage": "https://github.com/sankeyangshu/galaxy-cli/tree/main/packages/core#readme",
   "license": "MIT",
-  "main": "lib/index.js",
   "bin": {
     "galaxy-cli": "bin/index.js"
   },
