@@ -29,8 +29,15 @@
     "url": "https://github.com/sankeyangshu/galaxy-cli/issues"
   },
   "dependencies": {
+    "@galaxy-cli/utils": "file:../../../utils",
+    "colors": "^1.4.0",
     "commander": "^9.4.0",
+    "dotenv": "8.2.0",
     "import-local": "^3.1.0",
-    "npmlog": "^6.0.2"
+    "npmlog": "^6.0.2",
+    "path-exists": "4.0.0",
+    "root-check": "1.0.0",
+    "semver": "^7.3.7",
+    "user-home": "^3.0.0"
   }
 }
