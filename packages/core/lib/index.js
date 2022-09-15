@@ -8,6 +8,8 @@ const pathExists = require('path-exists').sync;
 const semver = require('semver');
 const pkg = require('../package.json');
 const constant = require('./const');
+// const init = require('../commands/init');
+const exec = require('./exec');
 const { log, getNpmSemverVersion } = require('@galaxy-cli/utils');
 
 const program = new commander.Command();
@@ -23,7 +25,51 @@ function registerCommand() {
     .option('-d, --debug', '是否开启调试模式', false)
     .option('-tp, --targetPath <targetPath>', '是否指定本地调试文件路径', '');
 
+  // 命令注册
+  program.command('create [projectName]').option('-f, --force', '是否强制初始化项目').action(exec);
+
+  // 开启debug模式
+  program.on('option:debug', function () {
+    if (program.debug) {
+      process.env.LOG_LEVEL = 'verbose';
+    } else {
+      process.env.LOG_LEVEL = 'info';
+    }
+    log.level = process.env.LOG_LEVEL;
+  });
+
+  // 指定targetPath
+  program.on('option:targetPath', function () {
+    process.env.CLI_TARGET_PATH = program.targetPath;
+  });
+
+  // 对未知命令监听
+  program.on('command:*', function (obj) {
+    const availableCommands = program.commands.map((cmd) => cmd.name());
+    console.log(colors.red('未知的命令：' + obj[0]));
+    if (availableCommands.length > 0) {
+      console.log(colors.red('可用命令：' + availableCommands.join(',')));
+    }
+  });
+
   program.parse(process.argv);
+
+  // 判断是否需要打印帮助文档
+  if (program.args && program.args.length < 1) {
+    program.outputHelp();
+    console.log();
+  }
+}
+
+/**
+ * @description: 准备阶段
+ */
+async function prepare() {
+  checkPkgVersion();
+  checkRoot();
+  checkUserHome();
+  checkEnv();
+  await checkGlobalUpdate();
 }
 
 /**
@@ -102,11 +148,7 @@ async function checkGlobalUpdate() {
  */
 async function core() {
   try {
-    checkPkgVersion();
-    checkRoot();
-    checkUserHome();
-    checkEnv();
-    await checkGlobalUpdate();
+    await prepare();
     registerCommand();
   } catch (e) {
     log.error(e.message);
