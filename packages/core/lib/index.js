@@ -26,7 +26,7 @@ function registerCommand() {
     .option('-tp, --targetPath <targetPath>', '是否指定本地调试文件路径', '');
 
   // 命令注册
-  program.command('create [projectName]').option('-f, --force', '是否强制初始化项目').action(exec);
+  program.command('init [projectName]').option('-f, --force', '是否强制初始化项目').action(exec);
 
   // 开启debug模式
   program.on('option:debug', function () {
@@ -152,6 +152,9 @@ async function core() {
     registerCommand();
   } catch (e) {
     log.error(e.message);
+    if (program.debug) {
+      console.log(e);
+    }
   }
 }
 
