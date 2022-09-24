@@ -9,7 +9,6 @@ const semver = require('semver');
 const pkg = require('../package.json');
 const constant = require('./const');
 const init = require('../commands/init');
-// const exec = require('./exec');
 const { log, getNpmSemverVersion } = require('@galaxy-cli/utils');
 
 const program = new commander.Command();

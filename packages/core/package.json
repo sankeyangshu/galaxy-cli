@@ -6,7 +6,7 @@
   "homepage": "https://github.com/sankeyangshu/galaxy-cli/tree/main/packages/core#readme",
   "license": "MIT",
   "bin": {
-    "galaxy-cli": "bin/index.js"
+    "galaxy": "bin/index.js"
   },
   "scripts": {
     "test": "node ./__tests__/@galaxy-cli/core.test.js"
@@ -30,13 +30,17 @@
   },
   "dependencies": {
     "@galaxy-cli/utils": "file:../../../utils",
+    "axios": "^0.27.2",
     "colors": "^1.4.0",
     "commander": "^9.4.0",
     "dotenv": "8.2.0",
     "fs-extra": "^10.1.0",
+    "git-clone": "^0.2.0",
     "import-local": "^3.1.0",
+    "inquirer": "7.3.3",
     "npminstall": "4.10.0",
     "npmlog": "^6.0.2",
+    "ora": "5.0.0",
     "path-exists": "4.0.0",
     "pkg-dir": "5.0.0",
     "root-check": "1.0.0",
