@@ -1,6 +1,6 @@
 {
-  "name": "@galaxy-cli/core",
-  "version": "0.0.0",
+  "name": "galaxy-cli-core",
+  "version": "0.0.1",
   "description": "galaxy-cli core",
   "author": "sankeyangshu",
   "homepage": "https://github.com/sankeyangshu/galaxy-cli/tree/main/packages/core#readme",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -29,12 +29,12 @@
     "url": "https://github.com/sankeyangshu/galaxy-cli/issues"
   },
   "dependencies": {
-    "@galaxy-cli/utils": "file:../../../utils",
     "axios": "^0.27.2",
     "colors": "^1.4.0",
     "commander": "^9.4.0",
     "dotenv": "8.2.0",
     "fs-extra": "^10.1.0",
+    "galaxy-cli-utils": "1.0.2",
     "git-clone": "^0.2.0",
     "import-local": "^3.1.0",
     "inquirer": "7.3.3",

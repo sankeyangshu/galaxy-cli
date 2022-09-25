@@ -2,7 +2,7 @@
 
 const path = require('path');
 const Package = require('../models/package');
-const { log } = require('@galaxy-cli/utils');
+const { log } = require('galaxy-cli-utils');
 
 const SETTINGS = {
   init: '@galaxy-cli/init',

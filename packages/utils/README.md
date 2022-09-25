@@ -13,12 +13,12 @@
 
 ## 简介
 
- **@galaxy-cli/utils** 是专门为 **Galaxy-CLI** 定制的工具包，提供了获取Galaxy-CLI NPM包信息和开发调试时log输出信息封装等一系列方法
+ **galaxy-cli-utils** 是专门为 **Galaxy-CLI** 定制的工具包，提供了获取Galaxy-CLI NPM包信息和开发调试时log输出信息封装等一系列方法
 ## 使用
 
 ###  获取npm包信息
 ```javascript
-const { getNpmInfo } = require('@galaxy-cli/utils');
+const { getNpmInfo } = require('galaxy-cli-utils');
 
 /**
  * @description: 获取npm包信息
@@ -31,7 +31,7 @@ cont res = getNpmInfo(npmName,registry)
 
 ### 获取所有满足条件的版本号
 ```javascript
-const { getNpmSemverVersion } = require('@galaxy-cli/utils');
+const { getNpmSemverVersion } = require('galaxy-cli-utils');
 
 /**
  * @description: 获取所有满足条件的版本号
@@ -46,7 +46,7 @@ const res =  getNpmSemverVersion(baseVersion, npmName, registry)
 
 ### 获取最新版本号
 ```javascript
-const { getNpmLatestVersion } = require('@galaxy-cli/utils');
+const { getNpmLatestVersion } = require('galaxy-cli-utils');
 
 /**
  * @description: 获取最新版本号

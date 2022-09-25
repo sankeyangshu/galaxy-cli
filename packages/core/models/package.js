@@ -7,7 +7,7 @@ const pathExists = require('path-exists').sync;
 const npminstall = require('npminstall');
 const formatPath = require('../utils/formatPath');
 const { isObject } = require('../utils/util');
-const { getDefaultRegistry, getNpmLatestVersion } = require('@galaxy-cli/utils');
+const { getDefaultRegistry, getNpmLatestVersion } = require('galaxy-cli-utils');
 
 class Package {
   constructor(options) {

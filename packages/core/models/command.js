@@ -2,7 +2,7 @@
 
 const semver = require('semver');
 const colors = require('colors/safe');
-const { log } = require('@galaxy-cli/utils');
+const { log } = require('galaxy-cli-utils');
 const { LOWEST_NODE_VERSION } = require('../lib/const');
 
 class Command {

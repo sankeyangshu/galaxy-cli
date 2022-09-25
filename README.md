@@ -44,8 +44,8 @@ Galaxy-CLI 是一个用于快速生成各种**前后端项目模版**的脚手�
 
 ### 文档说明
 
-- [@galaxy-cli/core 核心包](./packages/core/README.md)
-- [@galaxy-cli/utils 工具包](./packages/utils/README.md)
+- [galaxy-cli-core 核心包](./packages/core/README.md)
+- [galaxy-cli-utils 工具包](./packages/utils/README.md)
 
 ## 参与贡献
 

@@ -1,6 +1,6 @@
 {
-  "name": "@galaxy-cli/utils",
-  "version": "1.0.0",
+  "name": "galaxy-cli-utils",
+  "version": "1.0.2",
   "description": "galaxy-cli utils",
   "author": "sankeyangshu",
   "homepage": "https://github.com/sankeyangshu/galaxy-cli/tree/main/packages/utils#readme",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
