@@ -1,4 +1,5 @@
 <h1 align="center">
+  <img src="https://raw.githubusercontent.com/sankeyangshu/sankeyangshu/master/image/logo-bai.png" width="80"/>
   <br>
   Galaxy-CLI
 </h1>

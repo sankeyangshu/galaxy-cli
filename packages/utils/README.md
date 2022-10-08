@@ -1,4 +1,5 @@
 <h1 align="center">
+  <img src="https://raw.githubusercontent.com/sankeyangshu/sankeyangshu/master/image/logo-bai.png" width="80"/>
   <br>
   Galaxy-CLI-Utils
 </h1>
@@ -9,14 +10,16 @@
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="LISENCE" data-canonical-src="https://img.shields.io/badge/license-MIT-lightgrey" style="max-width:100%;">
 </p>
 
-* * *
+---
 
 ## 简介
 
- **galaxy-cli-utils** 是专门为 **Galaxy-CLI** 定制的工具包，提供了获取Galaxy-CLI NPM包信息和开发调试时log输出信息封装等一系列方法
+**galaxy-cli-utils** 是专门为 **Galaxy-CLI** 定制的工具包，提供了获取 Galaxy-CLI NPM 包信息和开发调试时 log 输出信息封装等一系列方法
+
 ## 使用
 
-###  获取npm包信息
+### 获取 npm 包信息
+
 ```javascript
 const { getNpmInfo } = require('galaxy-cli-utils');
 
@@ -30,6 +33,7 @@ cont res = getNpmInfo(npmName,registry)
 ```
 
 ### 获取所有满足条件的版本号
+
 ```javascript
 const { getNpmSemverVersion } = require('galaxy-cli-utils');
 
@@ -40,11 +44,12 @@ const { getNpmSemverVersion } = require('galaxy-cli-utils');
  * @param {string} registry npm源
  * @return {Array} 版本数组
  */
-const res =  getNpmSemverVersion(baseVersion, npmName, registry)
+const res = getNpmSemverVersion(baseVersion, npmName, registry);
 // [1.0.0,1.0.1...]
 ```
 
 ### 获取最新版本号
+
 ```javascript
 const { getNpmLatestVersion } = require('galaxy-cli-utils');
 
@@ -54,20 +59,20 @@ const { getNpmLatestVersion } = require('galaxy-cli-utils');
  * @param {*} registry npm源
  * @return {*} 最新版本号
  */
-const res = getNpmLatestVersion(npmName, registry)
+const res = getNpmLatestVersion(npmName, registry);
 // '1.0.9'
 ```
 
-### log封装
+### log 封装
 
-* [__log 使用__](./utils/log.js)
+- [**log 使用**](./lib/utils/log.js)
 
 ## 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
-4.  新建 Pull Request  
+4.  新建 Pull Request
 
 ## 许可证
 
