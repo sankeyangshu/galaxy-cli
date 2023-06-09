@@ -1,11 +1,3 @@
-/*
- * @Description: @commitlint/cli的配置文件
- * @Author: 三棵杨树
- * @Date: 2022-09-11 21:16:22
- * @LastEditors: 三棵杨树
- * @LastEditTime: 2022-09-11 21:16:22
- */
-
 /**
  * 提交规范
  * feat:     新增功能

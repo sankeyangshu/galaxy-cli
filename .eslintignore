@@ -1,2 +1,14 @@
+*.sh
 node_modules
-test
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+dist
+/public
+/docs
+.husky
+.local
+/bin
+Dockerfile
