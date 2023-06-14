@@ -1,13 +1,11 @@
-'use strict';
-
-const ora = require('ora');
+import ora from 'ora';
 
 /**
- * 睡觉函数
- * @param {Number} n 睡眠时间
+ * @description: 睡觉函数
+ * @param {number} n 睡眠时间
  */
-function sleep(n) {
-  return new Promise((resolve, reject) => {
+function sleep(n: number) {
+  return new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve();
     }, n);
@@ -15,13 +13,13 @@ function sleep(n) {
 }
 
 /**
- * loading加载效果
- * @param {String} message 加载信息
+ * @description: loading加载效果
+ * @param {string} message 加载信息
  * @param {Function} fn 加载函数
- * @param {List} args fn 函数执行的参数
- * @returns 异步调用返回值
+ * @param {array} args n 函数执行的参数
+ * @return 异步调用返回值
  */
-async function loading(message, fn, ...args) {
+export async function loading(message: string, fn: Function, ...args: any[]) {
   const spinner = ora(message);
   spinner.start(); // 开启加载
   try {
@@ -34,7 +32,3 @@ async function loading(message, fn, ...args) {
     return loading(message, fn, ...args);
   }
 }
-
-module.exports = {
-  loading,
-};
