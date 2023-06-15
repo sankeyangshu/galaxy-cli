@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -13,9 +17,6 @@ importers:
       '@types/node':
         specifier: ^20.2.5
         version: 20.2.5
-      '@types/npmlog':
-        specifier: ^4.1.4
-        version: 4.1.4
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.59.9
         version: 5.59.9(@typescript-eslint/parser@5.59.9)(eslint@8.42.0)(typescript@4.7.4)
@@ -64,21 +65,24 @@ importers:
       axios:
         specifier: ^1.4.0
         version: 1.4.0
-      colors:
-        specifier: ^1.4.0
-        version: 1.4.0
+      chalk:
+        specifier: ^5.2.0
+        version: 5.2.0
       commander:
         specifier: ^10.0.1
         version: 10.0.1
+      dirname-filename-esm:
+        specifier: ^1.1.1
+        version: 1.1.1
+      dotenv:
+        specifier: ^16.1.4
+        version: 16.1.4
       download-git-repo:
         specifier: ^3.0.2
         version: 3.0.2
       fs-extra:
         specifier: ^11.1.1
         version: 11.1.1
-      git-clone:
-        specifier: ^0.2.0
-        version: 0.2.0
       import-local:
         specifier: ^3.1.0
         version: 3.1.0
@@ -116,15 +120,15 @@ importers:
       '@types/fs-extra':
         specifier: ^11.0.1
         version: 11.0.1
-      '@types/git-clone':
-        specifier: ^0.2.0
-        version: 0.2.0
       '@types/import-local':
         specifier: ^3.1.0
         version: 3.1.0
       '@types/inquirer':
         specifier: ^9.0.3
         version: 9.0.3
+      '@types/npmlog':
+        specifier: ^4.1.4
+        version: 4.1.4
       '@types/root-check':
         specifier: ^1.0.0
         version: 1.0.0
@@ -669,10 +673,6 @@ packages:
     dependencies:
       '@types/jsonfile': 6.1.1
       '@types/node': 20.2.5
-    dev: true
-
-  /@types/git-clone@0.2.0:
-    resolution: {integrity: sha512-RnYrs8sZWTBfeg8hAh5VwM3wEBlIaraQfo8h9FSxmX09KQ9VUDuL9AFzR3doV6IUMzEwjee6fOViIhqFvs1ulA==}
     dev: true
 
   /@types/import-local@3.1.0:
@@ -1469,11 +1469,6 @@ packages:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
     dev: true
 
-  /colors@1.4.0:
-    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
-    engines: {node: '>=0.1.90'}
-    dev: false
-
   /combined-stream@1.0.8:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
@@ -1789,6 +1784,10 @@ packages:
     dependencies:
       path-type: 4.0.0
 
+  /dirname-filename-esm@1.1.1:
+    resolution: {integrity: sha512-BWBkv157Cf/z7Hjod2v2JS7vyC36Dk1QQolAtuLjpl8RBlv7Z92X7+Ufc2cjfR/B3iJUiK0QmGZkgtsmmLz0Tw==}
+    dev: false
+
   /doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
     engines: {node: '>=0.10.0'}
@@ -1809,6 +1808,11 @@ packages:
     dependencies:
       is-obj: 2.0.0
     dev: true
+
+  /dotenv@16.1.4:
+    resolution: {integrity: sha512-m55RtE8AsPeJBpOIFKihEmqUcoVncQIwo7x9U8ZwLEZw9ZpXboz2c+rvog+jUaJvVrZ5kBOeYQBX5+8Aa/OZQw==}
+    engines: {node: '>=12'}
+    dev: false
 
   /downgrade-root@2.0.0:
     resolution: {integrity: sha512-tke0knZzG76FThh9diBex027u3qsoXv6PKZDva1fsEuqlzlstkcyoJgdHE/wQc2nBU1rnUcmhMUnQA3gucXc0Q==}
@@ -2615,10 +2619,6 @@ packages:
 
   /git-clone@0.1.0:
     resolution: {integrity: sha512-zs9rlfa7HyaJAKG9o+V7C6qfMzyc+tb1IIXdUFcOBcR1U7siKy/uPdauLlrH1mc0vOgUwIv4BF+QxPiiTYz3Rw==}
-    dev: false
-
-  /git-clone@0.2.0:
-    resolution: {integrity: sha512-1UAkEPIFbyjHaddljUKvPhhLRnrKaImT71T7rdvSvWLXw95nLdhdi6Qmlx0KOWoV1qqvHGLq5lMLJEZM0JXk8A==}
     dev: false
 
   /git-raw-commits@2.0.11:

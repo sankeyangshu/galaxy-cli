@@ -6,11 +6,17 @@
 <h4 align="center">一个用于快速生成各种前后端项目模版的脚手架 | Galaxy-CLI的工具库</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Node-12.0.0-green" alt="flask version" data-canonical-src="https://img.shields.io/badge/Node-12.0.0-green" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/Node-16.0.0-green" alt="flask version" data-canonical-src="https://img.shields.io/badge/Node-16.0.0-green" style="max-width:100%;">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="LISENCE" data-canonical-src="https://img.shields.io/badge/license-MIT-lightgrey" style="max-width:100%;">
 </p>
 
 ---
+
+:star: :star: :star: :star: :star:
+
+### 提示
+
+现在 **galaxy-cli-utils 工具包** 暂停维护，该包内的功能已经集成到 [galaxy-cli-core](../core/README.md) 中，请访问 [galaxy-cli-core](../core/README.md)
 
 ## 简介
 

@@ -4,13 +4,14 @@
     "baseUrl": ".",
     "outDir": "dist",
     "rootDir": "./src",
-    "module": "commonjs",
+    "module": "esnext",
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
   "include": ["./src"],
   "exclude": ["dist"],
   "ts-node": {
-    "transpileOnly": true
+    "transpileOnly": true,
+    "esm": true
   }
 }

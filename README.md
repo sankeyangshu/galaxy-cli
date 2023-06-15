@@ -6,14 +6,15 @@
 <h4 align="center">一个用于快速生成各种前后端项目模版的脚手架</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Node-12.0.0-green" alt="flask version" data-canonical-src="https://img.shields.io/badge/Node-12.0.0-green" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/Node-16.0.0-green" alt="flask version" data-canonical-src="https://img.shields.io/badge/Node-16.0.0-green" style="max-width:100%;">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="LISENCE" data-canonical-src="https://img.shields.io/badge/license-MIT-lightgrey" style="max-width:100%;">
 </p>
 <p align="center">
   <a href="#简介">简介</a>&nbsp;|&nbsp;<a href="#快速开始">快速开始</a>
 </p>
 
-* * *
+---
+
 ## 简介
 
 ### 什么是 Galaxy-CLI ？
@@ -27,12 +28,18 @@ Galaxy-CLI 是一个用于快速生成各种**前后端项目模版**的脚手�
 ├── packages                   # npm包源代码
 │   ├── core                   # Galaxy-cli核心包
 │   ├── utils                  # Galaxy-cli工具包
+├── scripts                    # 脚本执行文件
+│   ├── preinstall             # 包管理工具安装脚本
 ├── .editorconfig              # 编辑相关配置
 ├── .eslintignore              # eslint忽略文件
 ├── .eslintrc.js               # eslint 配置
-├── .prettierrc                # Prettier 配置
+├── .gitignore                 # git忽略文件
+├── .prettierrc                # prettier 配置
+├── .prettierignore            # prettier忽略文件
 ├── commitlint.config.js       # 集成 commitlint 验证提交规范
-├── lerna.json                 # lerna 配置
+├── tsconfig.root.json         # typescript 配置
+├── pnpm-workspace.yaml        # pnpm Monorepo 配置文件
+├── pnpm-lock.yaml             # 依赖包版本锁定文件
 ├── package.json               # package.json 依赖
 ```
 
@@ -52,7 +59,7 @@ Galaxy-CLI 是一个用于快速生成各种**前后端项目模版**的脚手�
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
-4.  新建 Pull Request  
+4.  新建 Pull Request
 
 ## 许可证
 
