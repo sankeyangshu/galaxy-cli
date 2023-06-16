@@ -18,7 +18,6 @@ const TEMPLATE_ARRAY = [
   'react-template-base',
   'react-template-admin',
   'koa-template-cms',
-  'koa2-template',
 ];
 
 export { DEFAULT_CLI_HOME, LOWEST_NODE_VERSION, TEMPLATE_ARRAY };
