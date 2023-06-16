@@ -45,21 +45,80 @@ Galaxy-CLI 是一个用于快速生成各种**前后端项目模版**的脚手�
 
 ## 快速开始
 
-### 前序准备
-
-你需要在本地安装 [node](http://nodejs.org/) 和 [git](https://git-scm.com/)。本项目技术栈基于 [commander](https://github.com/tj/commander.js)、[inquirer](https://github.com/SBoudrias/Inquirer.js)、[axios](https://github.com/axios/axios)和[fs-extra](https://github.com/jprichardson/node-fs-extra)等第三方库实现 ，提前了解和学习这些知识会对使用本项目有很大的帮助。
-
 ### 文档说明
 
 - [galaxy-cli-core 核心包](./packages/core/README.md)
 - [galaxy-cli-utils 工具包](./packages/utils/README.md)
 
-## 参与贡献
+### 前序准备
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+提前了解和学习这些知识会对使用本项目有很大的帮助。
+
+- [node](http://nodejs.org/) 和 [git](https://git-scm.com/) - 项目开发环境
+- [TypeScript](https://www.typescriptlang.org/) - 熟悉 `TypeScript` 基本语法
+- [Es6+](http://es6.ruanyifeng.com/) - 熟悉 es6 基本语法
+- [commander](https://github.com/tj/commander.js) - 熟悉 commander 基本使用
+- [inquirer](https://github.com/SBoudrias/Inquirer.js) - inquirer 基本使用
+- [fs-extra](https://github.com/jprichardson/node-fs-extra) - fs-extra 基本使用
+
+## 安装和使用
+
+- 获取代码
+
+```bash
+git clone https://github.com/sankeyangshu/galaxy-cli.git
+```
+
+- 安装依赖
+
+```bash
+cd galaxy-cli
+
+# 推荐使用pnpm管理依赖，如果需要使用其他包管理工具，需要将package.json中`preinstall`删除
+pnpm install
+```
+
+- 运行
+
+```bash
+cd packages/core
+
+pnpm run dev
+```
+
+- 打包
+
+```bash
+cd packages/core
+
+pnpm run build
+```
+
+## 如何贡献
+
+你可以[提一个 issue](https://github.com/sankeyangshu/galaxy-cli/issues) 或者提交一个 Pull Request。
+
+**Pull Request:**
+
+1. Fork 代码
+2. 创建自己的分支: `git checkout -b feat/xxxx`
+3. 提交你的修改: `git commit -am 'feat(function): add xxxxx'`
+4. 推送您的分支: `git push origin feat/xxxx`
+5. 提交 `pull request`
+
+## Git 贡献提交规范
+
+- `feat`: 新增功能
+- `fix`: 修复 bug
+- `docs`: 文档变更
+- `style`: 代码格式（不影响功能，例如空格、分号等格式修正）
+- `refactor`: 代码重构（不包括 bug 修复、功能新增）
+- `perf`: 性能优化
+- `test`: 添加、修改测试用例
+- `build`: 构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）
+- `ci`: 修改 CI 配置、脚本
+- `chore`: 对构建过程或辅助工具和库的更改（不影响源文件、测试用例）
+- `revert`: 回滚 commit
 
 ## 许可证
 
