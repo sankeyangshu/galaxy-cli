@@ -127,7 +127,7 @@ class InitCommand extends Command {
           return reject(error);
         }
         spinner.color = 'green';
-        spinner.succeed(`${chalk.grey('拉取远程模板仓库成功！')}`);
+        spinner.succeed(`${chalk.green('拉取远程模板仓库成功！')}`);
         // 删除模版中的git文件
         fse.removeSync(path.join(downloadPath, '.git'));
         resolve();
@@ -154,7 +154,7 @@ class InitCommand extends Command {
       });
       fse.writeFileSync(packagePath, JSON.stringify(pkg, null, 2));
       spinner.color = 'green';
-      spinner.succeed(`${chalk.grey('项目创建成功')} ${chalk.cyan(options.projectName)}`);
+      spinner.succeed(`${chalk.green('项目创建成功')} ${chalk.cyan(options.projectName)}`);
     } else {
       spinner.color = 'red';
       spinner.fail(chalk.red('项目创建失败！'));

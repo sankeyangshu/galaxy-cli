@@ -12,6 +12,10 @@
 
 ---
 
+## 简介
+
+**galaxy-cli-core** 是 **Galaxy-CLI** 的核心包，提供了用于快速生成各种前后端项目模版的功能
+
 ## 安装和使用
 
 ### 使用
@@ -30,7 +34,7 @@ pnpm i -g galaxy-cli-core
 
 - 创建项目
 
-<img src="../../media/galaxy-cli.png" width="800">
+<img src="https://github.com/sankeyangshu/galaxy-cli/blob/master/media/galaxy-cli.png?raw=true" width="800">
 
 ### 本地调试
 
@@ -64,10 +68,6 @@ cd packages/core
 
 pnpm run build
 ```
-
-## 简介
-
-**galaxy-cli-core** 是 **Galaxy-CLI** 的核心包，提供了用于快速生成各种前后端项目模版的功能
 
 ## 如何贡献
 
